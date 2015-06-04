@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <Button
+        android:id="@+id/button_send"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:onClick="sendMessage"
+        android:text="@string/button"
+        android:width="100dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:contentDescription="Logo alt"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        style="@style/EditTextAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_message2"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/edit_text" >
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_message2"
+        style="@style/EditTextAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="@string/edit_text2"
+        android:inputType="textPassword" />
+
+</RelativeLayout>

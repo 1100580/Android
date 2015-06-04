@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="Logo alt"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/edit_message"
+        style="@style/EditTextAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_message2"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/edit_text"
+        android:width="200dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_message2"
+        style="@style/EditTextAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/edit_text2"
+        android:inputType="textPassword"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/loginStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_send"
+        android:layout_centerHorizontal="true"
+        android:textColor="#CC0000"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_message2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button_send"
+        style="@style/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_message2"
+        android:layout_below="@+id/progressBarLogin"
+        android:layout_marginTop="16dp"
+        android:onClick="sendMessage"
+        android:text="@string/button"
+        android:width="200dp" />
+
+</RelativeLayout>

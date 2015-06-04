@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.simov"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+  	<uses-permission android:name="android.permission.INTERNET" />
+  	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:debuggable="true" >
+
+        <activity
+            android:name="com.example.simov.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.simov.TypesList">
+        </activity>
+        <activity android:name="com.example.simov.TypeDetails">
+        </activity>
+        <activity android:name="com.example.simov.SelectOption">
+        </activity>
+        <activity android:name="com.example.simov.InstalledSensors">
+        </activity>
+        <activity android:name="com.example.simov.ASmackConnections">
+        </activity>
+        <activity android:name="com.example.simov.EditSensor">
+        </activity>
+        <activity android:name="com.example.simov.EditUser">
+        </activity>
+        <activity android:name="com.example.simov.AddSensor">
+        </activity>
+        <activity android:name="com.example.simov.RemoveSensor">
+        </activity>
+    </application>
+
+</manifest>

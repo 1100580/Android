@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Mudar Perfil"/>
+    
+    <item
+        android:id="@+id/add_sensor"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Adicionar Sensor"/>
+    
+    <item
+        android:id="@+id/remove_sensor"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Remover Sensor"/>
+
+</menu>

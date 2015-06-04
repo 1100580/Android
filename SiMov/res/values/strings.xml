@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SiMov</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello">Hello world!</string>
+	<string name="edit_text">Username</string>
+	<string name="edit_text2">Password</string>
+	<string name="button">Login</string>
+	
+	    <string-array name="sensorType">
+	        <item >Iluminação</item>
+	        <item >Temperatura</item>
+	        <item >Movimento</item>
+	        <item >Tracking</item>
+	        <item >Energia</item>
+	        <item >Comunicações</item>
+	        <item >Outros</item>
+	        <!--  <item >Carla Pereira</item>-->
+    	</string-array>
+    	
+	    <string-array name="installedSensor">
+	        <item >Sensor1</item>
+	        <item >Sensor2</item>
+	        <item >Sensor3</item>
+    	</string-array>
+    
+</resources>
